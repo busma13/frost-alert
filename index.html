@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Frost Alert</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+
+			</nav>
+		</header>
+		<main>
+			<h1>Sign up for frost alerts</h1>
+			<p>
+				Get notified by email or text message when there is potential for frost in your area.  You will receive a message the evening of a night that will potentially drop below freezing. So if it might freeze sometime between Tuesday night and Wednesday morning you will receive a notice Tuesday evening.  You can also request an additional notice one day before the first warning(Monday evening in the above example).
+			</p>
+			<form>
+				<label for="location">Enter full address, city, or zip code:</label>
+				<input type="text" id="location">
+
+				<span>Type of alert</span>
+				<input type="checkbox" id="emailAlert" name="emailAlert">
+				<label for="emailAlert">Email</label>
+				<input type="email" name="email" id="email" hidden>  <!--show when box checked-->
+				<input type="checkbox" id="textAlert" name="textAlert">
+				<label for="textAlert">Text</label>
+				<input type="tel" name="tel" id="tel" hidden>  <!--show when box checked-->
+				<label for="longerWarning">Longer warning</label>
+				<input type="checkbox" id="longerWarning">
+				<input type="submit" value="sign up">
+			
+			</form>
+		</main>
+		<footer>
+			<nav>
+
+			</nav>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
